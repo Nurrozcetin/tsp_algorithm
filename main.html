@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <main>
+        <form id="pointForm">
+            <p>Haritada önce başlangıç (kaynak), ardından bitiş (hedef) noktalarını seçin. Sonrasında ara noktaları ekleyebilirsiniz.</p>
+            <label for="numPoints">Kaç ara nokta ziyaret etmek istiyorsunuz?</label>
+            <input type="number" id="numPoints" min="1" placeholder="Örn: 3" required>
+            <button type="submit">Noktaları Belirle</button>
+        </form>
+        <div id="map"></div>
+        <div id="result">
+            <h2>Rota Sonuçları</h2>
+            <ul id="routeList"></ul>
+            <p id="totalDistance"></p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
